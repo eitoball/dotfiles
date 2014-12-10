@@ -1,0 +1,20 @@
+[branch]
+  autosetuprebase = always
+[color]
+  ui = auto
+[core]
+  editor = vim -f
+  pager = less -r
+[github]
+	user = eitoball@gmail.com
+[mergetool]
+  keepBackup = true
+[pager]
+  log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less
+[push]
+  default = tracking
+[user]
+	name = Eito Katagiri
+	email = eitoball@gmail.com
