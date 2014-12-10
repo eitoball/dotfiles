@@ -1,0 +1,9 @@
+colorscheme solarized
+
+set background=dark
+set guifont=M+\ 2m\ regular:h16
+
+noremap <silent> <leader>ug :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+noremap <silent> <leader>ur :<C-u>UniteResume search-buffer<CR>
+
+ab cbss Capybara::Screenshot.screen_shot_and_save_page

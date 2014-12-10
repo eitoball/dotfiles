@@ -1,3 +1,45 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "janus/vim-over"]
+	path = janus/vim-over
+	url = git://github.com/osyo-manga/vim-over.git
+[submodule "janus/vim-bundler"]
+	path = janus/vim-bundler
+	url = git://github.com/tpope/vim-bundler.git
+[submodule "janus/neomru.vim"]
+	path = janus/neomru.vim
+	url = git://github.com/Shougo/neomru.vim.git
+[submodule "janus/unite-rails"]
+	path = janus/unite-rails
+	url = git://github.com/basyura/unite-rails.git
+[submodule "janus/vimux"]
+	path = janus/vimux
+	url = git://github.com/benmills/vimux.git
+[submodule "janus/vim-wakatime"]
+	path = janus/vim-wakatime
+	url = git@github.com:wakatime/vim-wakatime.git
+[submodule "janus/vim-hardtime"]
+	path = janus/vim-hardtime
+	url = git://github.com/takac/vim-hardtime.git
+[submodule "janus/vim-rubocop"]
+	path = janus/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop.git
+[submodule "janus/dash.vim"]
+	path = janus/dash.vim
+	url = git://github.com/rizzatti/dash.vim.git
+[submodule "janus/unite.vim"]
+	path = janus/unite.vim
+	url = git://github.com/Shougo/unite.vim.git
+[submodule "janus/vimshell.vim"]
+	path = janus/vimshell.vim
+	url = git://github.com/Shougo/vimshell.vim.git
+[submodule "janus/emmet-vim"]
+	path = janus/emmet-vim
+	url = git://github.com/mattn/emmet-vim.git
+[submodule "janus/lightline.vim"]
+	path = janus/lightline.vim
+	url = git://github.com/itchyny/lightline.vim.git
+[submodule "janus/vimproc"]
+	path = janus/vimproc
+	url = git://github.com/Shougo/vimproc.git
