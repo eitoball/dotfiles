@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="superjarin"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,13 +45,28 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  brew
+  bundler
+  colored-man
+  common-alias
+  gem
+  git-extras
+  git
+  osx
+  pow
+  rails
+  rbenv
+  themes
+  thor
+  tmux
+  zsh_reload )
 
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH=~/.rbenv/shims:~/Library/Homebrew/bin:${PATH}
+export PATH=~/bin:~/.rbenv/shims:~/Library/Homebrew/bin:${PATH}
 
 source $ZSH/oh-my-zsh.sh
 
@@ -71,6 +86,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=${HOME}/Library/Caskroom"
+export RUBY_CONFIGURE_OPTS="--enable-shared --with-readline-dir=$(brew --prefix readline) --with-openssl-dir=$(brew --prefix openssl)"
+export ZSH_TMUX_AUTOSTART=true
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -79,5 +98,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=${HOME}/Library/Caskroom"
