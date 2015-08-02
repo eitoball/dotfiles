@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="superjarin"
+ZSH_THEME="gnzh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -66,7 +66,7 @@ plugins=(
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH=~/bin:~/.rbenv/shims:~/Library/Homebrew/bin:${PATH}
+export PATH=~/bin:~/Library/Homebrew/bin:/usr/local/bin:/sbin:${PATH}
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,3 +98,7 @@ export ZSH_TMUX_AUTOSTART=true
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/eito/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
